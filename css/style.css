@@ -1,9 +1,14 @@
 @charset "UTF-8";
 
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+
 * {
     margin: 0;
     padding: 0;
-
+    box-sizing: border-box;
 }
 
 .site {
@@ -13,7 +18,9 @@
 
 }
 
-
+:root {
+    --font_inter: "Inter", sans-serif;
+}
 
 
 .banner-01,
@@ -22,12 +29,14 @@
     height: 700px;
     background-repeat: no-repeat;
     background-position: center;
+    width: 100%;
 
 }
 
 
 .banner-01 {
     background-image: url(../img/banner-01.jpg);
+    width: 100%;
 }
 
 .banner-02 {
@@ -247,7 +256,8 @@
 }
 
 
-.avaliacoes .site .texto_avl , .sobre_nos .site .texto_avl {
+.avaliacoes .site .texto_avl,
+.sobre_nos .site .texto_avl {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -259,12 +269,14 @@
     justify-content: space-between;
 }
 
-.avaliacoes .site .texto_avl h3 , .sobre_nos .site .texto_avl h3  {
+.avaliacoes .site .texto_avl h3,
+.sobre_nos .site .texto_avl h3 {
     font-size: 45pt;
     margin-bottom: 20px;
 }
 
-.avaliacoes .site .texto_avl h3 strong , .sobre_nos .site .texto_avl h3 strong {
+.avaliacoes .site .texto_avl h3 strong,
+.sobre_nos .site .texto_avl h3 strong {
     color: #E1C28C;
 
 }
@@ -1403,7 +1415,7 @@
     font-weight: bold;
 }
 
-.sobre_nos .site .lado_a_lado{
+.sobre_nos .site .lado_a_lado {
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
@@ -1422,7 +1434,7 @@
 }
 
 
-.sobre_nos .site .lado_a_lado .missao_visao_valores{
+.sobre_nos .site .lado_a_lado .missao_visao_valores {
     display: flex;
     flex-flow: column wrap;
     width: 30%;
@@ -1430,27 +1442,27 @@
 }
 
 
-.sobre_nos .site .lado_a_lado .missao_visao_valores button{
+.sobre_nos .site .lado_a_lado .missao_visao_valores button {
     margin: 10px;
 }
 
-.sobre_nos .site .lado_a_lado .missao_visao_valores button  h5{
+.sobre_nos .site .lado_a_lado .missao_visao_valores button h5 {
     margin: 10px 0;
 }
 
-.sobre_nos .site .lado_a_lado .missao_visao_valores button:hover{
+.sobre_nos .site .lado_a_lado .missao_visao_valores button:hover {
     background-color: #D9D9D950;
 }
 
-.sobre_nos .site .lado_a_lado .missao_visao_valores button:focus{
+.sobre_nos .site .lado_a_lado .missao_visao_valores button:focus {
     background-color: #D9D9D950;
 }
 
-.sobre_nos .site .lado_a_lado .texto_sobre{
+.sobre_nos .site .lado_a_lado .texto_sobre {
     width: 50%;
 }
 
-.sobre_nos .site .lado_a_lado .texto_sobre p{
+.sobre_nos .site .lado_a_lado .texto_sobre p {
     font-size: 30pt;
     color: black;
     line-height: 60px;
@@ -1467,6 +1479,52 @@
 
 footer {
     height: 600px;
+
+    .cor_fundo {
+        .site {
+            max-width: 1400px;
+
+
+            .newsletter {
+                width: 48%;
+
+                h3 {
+                    font-family: var(--font_inter);
+                    font-weight: bold;
+                    font-size: 25px;
+                }
+
+                p {
+                    font-family: var(--font_inter);
+                    font-weight: 500;
+                    font-size: 20px;
+                }
+
+                form {
+display: flex;
+align-items: center;
+                    input {
+                        width: 400px;
+                        height: 60px;
+                        border-radius: 10px;
+
+                    }
+
+                    button {
+                        width: 170px;
+                        height: 60px;
+                        border-radius: 10px;
+                        font-family: var(--font_inter);
+                        font-size: 20px;
+                    }
+                }
+            }
+
+
+
+        }
+    }
+
 
 }
 
