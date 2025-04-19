@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+}
+
+section:not(:first-child) {
+    margin: 50px 0;
+}
+
+/* .slick-dotted.slick-slider {
+    margin-bottom: 70px;
+}
+
+
+.slick-dots {
+    bottom: -35px;
+}
+
+
+.slick-dots li {
+    color: black;
+    margin-left: 30px;
+
+}
+
+
+.slick-dots li button:before {
+    font-size: 10px;
+    color: white;
+    display: contents;
+}
+
+
+
+
+
+.slick-dots li button {
+    width: 30px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+header {
+    background-color: #463C4B;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header .topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+header .logo h1 {
+    width: 271px;
+    height: 88px;
+    background: url(../img/Logo2.png) no-repeat;
+    background-size: 100% 100%;
+    text-indent: -999px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li:nth-child(2) {
+    margin: 0 60px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    display: block;
+    font-size: 18pt;
+}
+
+header nav ul li a:hover {
+    color: #E1C28C;
+}
+
+.activeMenu {
+  color:#E1C28C;
+}
+
+header .sacola {
+  border: none;
+  cursor: pointer;
+  background: url(../img/sacolaTopo.svg) no-repeat;
+  background-position: center center;
+  width: 50px;
+  height: 50px;
+}
+
+header .sacola::after{
+  content: '0';
+  position: relative;
+  font-size: 14pt;
+  font-weight: bold;
+  bottom: 15px;
+  left: 22px;
+  background-color: #ffffff;
+  border-radius: 100px;
+  padding: 4px 10px;
+}
+
+header .pesquisa {
+    background-color: #F6EDDD;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .pesquisa .site {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header .pesquisa .site form {
+    width: 50%;
+    color: #ffffff;
+    font-size: 18pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .busca {
+    box-sizing: border-box;
+    width: 100%;
+    line-height: 40px;
+    padding-left: 30px;
+    outline: none;
+    border: none;
+    font-size: 13pt;
+}
+
+header .pesquisa form button{
+    background-color: #463C4B;
+    border: none;
+    color: #ffffff;
+    font-size: 16pt;
+    width: 60px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* BOTÃO SITE */
+.btnSite {
+    display: flex;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000000;
+    background: #ffffff;
+    transition: 1s;
+    box-shadow: 4px 4px 0 #463C4B, -4px -4px 0 #E1C28C;
+    border: none;
+    outline: none;
+  }
+
+.btnSite:hover {
+    box-shadow: -4px -4px 0 #463C4B, 4px 4px 0 #E1C28C;
+}
+
+.btnSite i {
+  margin-left: 10px;
+}
+
+h2 {
+    font-size: 20pt;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h2 span {
+    color: #E1C28C;
+
+}
+
+.produto {
+    width: 300px;
+    display: block;
+    color: #000000;
+    flex-direction: column;
+    position: relative;
+    transition: 0.2s;
+}
+
+.produto > button  {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    background-color: transparent;
+    top: 10px;
+    right: 20px;
+}
+
+.produto > button::before{
+    content: 'Adicionar a sacola';
+    background-color: #000000c5;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px 5px;
+    visibility: hidden;
+    opacity: 0;
+    font-weight: bold;
+    position: absolute;
+    right: 45px;
+    width: 120px;
+    transition: 0.2s;
+}
+
+.produto > button:hover::before {
+    visibility: visible;
+    opacity: 1;
+}
+
+.produto button img {
+    width: 45px;
+}
+
+.produto a {
+    color: #000000;
+    display: block;
+    margin: 0 10px;
+}
+
+.produto > a img{
+    width: 100%;
+    /* margin-top: -45px; */
+    
+}
+
+.produto > a p{
+    margin: 10px 0;
+    font-size: 16pt;
+}
+
+.preco span:not(:first-child){
+    margin: 0 10px;
+}
+
+.preco span:nth-child(2){
+    border-radius: 50px;
+    text-decoration: line-through;
+    color: #9A9A9A;
+}
+
+.preco span:last-child{
+    background-color: #E1C28C;
+    border-radius: 50px;
+    padding: 2px 5px;
+    color: #ffffff;
+}
